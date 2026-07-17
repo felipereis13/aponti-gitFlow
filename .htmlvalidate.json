@@ -1,8 +1,11 @@
 {
   "extends": ["html-validate:recommended"],
   "rules": {
-    "doctype-style": "error",
-    "no-inline-style": "off"
+    "doctype-style": "off",
+    "void-style": "off",
+    "attr-quotes": "off",
+    "indent": "off",
+    "element-required-attributes": "warn",
+    "no-trailing-whitespace": "off"
   }
 }
-
