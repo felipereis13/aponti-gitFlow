@@ -138,3 +138,11 @@ margin: 0.5rem 0;
 color: var(--accent-green); 
 font-size: 0.875rem; 
 } 
+
+.kpi-card .value.alert {
+color: var(--accent-red);
+}
+.trend.danger {   
+color: var(--accent-red);
+font-size: 0.875rem;
+}
