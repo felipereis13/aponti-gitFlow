@@ -44,16 +44,19 @@ body {
   align-items: center;
   gap: 0.75rem;
 }
+
 .brand h1 {
   font-size: 1.25rem;
   color: var(--accent-blue);
   letter-spacing: 1px;
 }
+
 .menu {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .menu a {
   color: var(--text-muted);
   text-decoration: none;
@@ -61,6 +64,7 @@ body {
   border-radius: 8px;
   transition: all 0.3s;
 }
+
 .menu a:hover,
 .menu a.active {
   background-color: #0f172a;
@@ -84,9 +88,11 @@ body {
   border-radius: 6px;
   width: 300px;
 }
+
 .search-box input:focus {
   outline: 1px solid var(--accent-blue);
 }
+
 .avatar {
   background-color: var(--accent-blue);
   color: #000;
@@ -96,56 +102,91 @@ body {
 }
 
 .content-area {
-padding: 2rem;
-overflow-y: auto;
+  padding: 2rem;
+  overflow-y: auto;
 }
+
 .dashboard-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
+
 .status-badge {
-background-color: rgba(74, 222, 128, 0.1);
-color: var(--accent-green);
-padding: 0.5rem 1rem;
-border-radius: 20px;
-font-size: 0.875rem;
+  background-color: rgba(74, 222, 128, 0.1);
+  color: var(--accent-green);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
 }
-.kpi-grid { 
-display: grid; 
-grid-template-columns: repeat(4, 1fr); 
-gap: 1.5rem; 
-margin-bottom: 2rem; 
-} 
-.kpi-card { 
-background-color: var(--bg-card); 
-padding: 1.5rem; 
-border-radius: 12px; 
-border: 1px solid var(--border-color); 
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
-.kpi-card h3 { 
-color: var(--text-muted); 
-font-size: 0.875rem; 
-text-transform: uppercase; 
-} 
-.kpi-card .value { 
-font-size: 2rem; 
-font-weight: bold; 
-margin: 0.5rem 0; 
-} 
-.trend.positive { 
-color: var(--accent-green); 
-font-size: 0.875rem; 
-} 
-.trend.negative { 
-color: var(--accent-blue); 
-font-size: 0.875rem; 
+
+.kpi-card {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.kpi-card h3 {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.kpi-card .value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.trend.positive {
+  color: var(--accent-green);
+  font-size: 0.875rem;
+}
+
+.trend.negative {
+  color: var(--accent-blue);
+  font-size: 0.875rem;
+}
 
 .kpi-card .value.alert {
-color: var(--accent-red);
+  color: var(--accent-red);
 }
-.trend.danger {   
-color: var(--accent-red);
-font-size: 0.875rem;
+
+.trend.danger {
+  color: var(--accent-red);
+  font-size: 0.875rem;
+}
+
+.chart-section {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.chart-mock {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.bar {
+  flex-grow: 1;
+  background: linear-gradient(to top, var(--accent-blue),
+      transparent);
+  border-top: 2px solid var(--accent-blue);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.5s;
 }
