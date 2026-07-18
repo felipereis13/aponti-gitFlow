@@ -114,6 +114,7 @@ body {
 }
 
 .status-badge {
+
   background-color: rgba(74, 222, 128, 0.1);
   color: var(--accent-green);
   padding: 0.5rem 1rem;
@@ -155,6 +156,44 @@ body {
 .trend.negative {
   color: var(--accent-blue);
   font-size: 0.875rem;
+}
+
+
+background-color: rgba(74, 222, 128, 0.1);
+color: var(--accent-green);
+padding: 0.5rem 1rem;
+border-radius: 20px;
+font-size: 0.875rem;
+}
+.kpi-grid { 
+display: grid; 
+grid-template-columns: repeat(4, 1fr); 
+gap: 1.5rem; 
+margin-bottom: 2rem; 
+} 
+.kpi-card { 
+background-color: var(--bg-card); 
+padding: 1.5rem; 
+border-radius: 12px; 
+border: 1px solid var(--border-color); 
+}
+.kpi-card h3 { 
+color: var(--text-muted); 
+font-size: 0.875rem; 
+text-transform: uppercase; 
+} 
+.kpi-card .value { 
+font-size: 2rem; 
+font-weight: bold; 
+margin: 0.5rem 0; 
+} 
+.trend.positive { 
+color: var(--accent-green); 
+font-size: 0.875rem; 
+} 
+.trend.negative { 
+color: var(--accent-blue); 
+font-size: 0.875rem; 
 }
 
 .kpi-card .value.alert {
