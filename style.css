@@ -141,4 +141,11 @@ font-size: 0.875rem;
 .trend.negative { 
 color: var(--accent-blue); 
 font-size: 0.875rem; 
+
+.kpi-card .value.alert {
+color: var(--accent-red);
+}
+.trend.danger {   
+color: var(--accent-red);
+font-size: 0.875rem;
 }
